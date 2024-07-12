@@ -84,7 +84,7 @@
         // 짝수 인지 홀수 인지 판단하는 함수
         // "? 수는 짝수/홀수 입니다." 출력하는 함수
 
-        var num = -1;
+        var num = 0.5;
         var result = add(num);
         sum2(num, result);
         function add(num) {
@@ -99,8 +99,10 @@
                 alert("은 짝수입니다");
             } else if(result < 0) {
                 alert("음수입니다");
-            } else {
+            } else if(result ==1) {
                 alert(num + "은 홀수입니다");
+            } else {
+                alert("오류");
             }
         }
 
